@@ -66,7 +66,7 @@ function copyPassword1() {
     textarea.select();
     textarea.setSelectionRange(0, textarea.value.length);
     document.execCommand("copy");
-    
+    alert("copied");
     document.body.removeChild(textarea);
     
 }
@@ -79,7 +79,7 @@ function copyPassword2() {
     textarea.select();
     textarea.setSelectionRange(0, textarea.value.length);
     document.execCommand("copy");
-    
+    alert("copied");
     document.body.removeChild(textarea);
     
 }
