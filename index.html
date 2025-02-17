@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+        <div id="generate-password">
+            <h1 id="password-title">Generate a <br><span class="password">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <label for="Password length" id="length-input-label">Password length: </label>
+            <input id="password-length" name= "password length" type="number" required>
+            <p id="message-error"></p>
+            <div class="btns">
+                <button id="password-btn" onclick="generatePassword()">Generate passwords</button>
+                <button id="clear-btn" onclick="clearPasswords()">Clear passwords</button>
+            </div>
+        </div>
+        <div id="results">
+            <p id="password-result1" onclick="copyPassword1"></p>
+            <p id="password-result2" onclick="copyPassword2"></p>
+        </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
