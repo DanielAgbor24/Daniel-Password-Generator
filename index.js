@@ -65,8 +65,12 @@ function copyPassword1() {
     document.body.appendChild(textarea);
     textarea.select();
     textarea.setSelectionRange(0, textarea.value.length);
-    document.execCommand("copy");
-    alert("copied");
+    let successful = document.execCommand("copy");
+    if (successful) {
+        alert("Copied");
+    } else {
+        alert("Failed to copy");
+    }
     document.body.removeChild(textarea);
     
 }
@@ -78,8 +82,12 @@ function copyPassword2() {
     document.body.appendChild(textarea);
     textarea.select();
     textarea.setSelectionRange(0, textarea.value.length);
-    document.execCommand("copy");
-    alert("copied");
+    let successful = document.execCommand("copy");
+    if (successful) {
+        alert("Copied");
+    } else {
+        alert("Failed to copy");
+    }
     document.body.removeChild(textarea);
     
 }
